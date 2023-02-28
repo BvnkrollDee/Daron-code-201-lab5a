@@ -104,9 +104,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+// let proArray = [2, 3, 4];
 
+function multiplyArray(multArr) { //eslint-disable-line
+    let z = multiply(multArr[0], multArr[1])[0];
+    let p = multiply(z, multArr[2])[0];
+    return [p, `${multArr[0]}, ${multArr[1]}, ${multArr[2]}`];
 }
+    // let z = product(proArray[0], proArray[1], proArray[2])[0];
+    // return [z, `${proArray[0]}, ${proArray[1]}, ${proArray[2]}`];
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
